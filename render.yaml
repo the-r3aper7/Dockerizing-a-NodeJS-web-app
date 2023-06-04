@@ -1,12 +1,8 @@
-version: '3'
+version: 1
 services:
-  app:
+  - name: nodejs-app
+    type: docker
     build:
-      context: .
       dockerfile: Dockerfile
-    ports:
-      - 3000:3000
-    volumes:
-      - .:/app
-    environment:
-      - NODE_ENV=production
+    env:
+      - KEY=VALUE
