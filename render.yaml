@@ -1,6 +1,6 @@
 version: 1
 services:
   - name: nodejs-app
-  - type: blueprint
+  type: blueprint
     build:
       dockerfile: Dockerfile
